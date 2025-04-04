@@ -31,11 +31,11 @@ pip install jupytext
   - [x] ch03-04-time_series.py - ch03-04-time_series.ipynb
   - [x] ch03-05-reduction.py - ch03-05-reduction.ipynb
   - [x] ch03-06-reduction-mnist.py - ch03-06-reduction-mnist.ipynb
-- [ ] ch04
+- [x] ch04
   - [x] ch04-01-introduction.py - ch04-01-introduction.ipynb
-  - [ ] ch04-02-run_xgb.py - ch04-02-run_xgb.ipynb
+  - [x] ch04-02-run_xgb.py - ch04-02-run_xgb.ipynb
   - [x] ch04-03-run_lgb.py - ch04-03-run_lgb.ipynb
-  - [ ] ch04-04-run_nn.py - ch04-04-run_nn.ipynb
+  - [x] ch04-04-run_nn.py - ch04-04-run_nn.ipynb
   - [x] ch04-05-run_linear.py - ch04-05-run_linear.ipynb
 - [x] ch05
   - [x] ch05-01-validation.py - ch05-01-validation.ipynb
