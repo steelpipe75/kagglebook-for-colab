@@ -66,7 +66,8 @@ class Model1NN:
 
     def predict(self, x):
         x = self.scaler.transform(x)
-        pred = self.model.predict_proba(x).reshape(-1)
+        # pred = self.model.predict_proba(x).reshape(-1)
+        pred = self.model.predict(x)
         return pred
 
 
