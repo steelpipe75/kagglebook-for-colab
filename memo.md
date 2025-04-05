@@ -47,7 +47,7 @@ pip install jupytext
   - [x] ch06-04-filter.py - ch06-04-filter.ipynb
   - [x] ch06-05-embedded.py - ch06-05-embedded.ipynb
   - [x] ch06-06-wrapper.py - ch06-06-wrapper.ipynb
-- [ ] ch07
-  - [ ] ch07-01-stacking.py - ch07-01-stacking.ipynb
-  - [ ] ch07-02-blending.py - ch07-02-blending.ipynb
+- [x] ch07
+  - [x] ch07-01-stacking.py - ch07-01-stacking.ipynb
+  - [x] ch07-02-blending.py - ch07-02-blending.ipynb
   - [x] ch07-03-adversarial.py - ch07-03-adversarial.ipynb
