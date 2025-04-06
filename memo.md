@@ -37,13 +37,15 @@ pip install jupytext
   - [x] ch04-03-run_lgb.py - ch04-03-run_lgb.ipynb
   - [x] ch04-04-run_nn.py - ch04-04-run_nn.ipynb
   - [x] ch04-05-run_linear.py - ch04-05-run_linear.ipynb
+- [ ] ch04-model-interface
+  - [ ] code/run.py - code/run.ipynb
 - [x] ch05
   - [x] ch05-01-validation.py - ch05-01-validation.ipynb
   - [x] ch05-02-timeseries.py - ch05-02-timeseries.ipynb
-- [ ] ch06
+- [x] ch06
   - [x] ch06-01-hopt.py - ch06-01-hopt.ipynb
   - [x] ch06-02-hopt_xgb.py - ch06-02-hopt_xgb.ipynb
-  - [ ] ch06-03-hopt_nn.py - ch06-03-hopt_nn.ipynb
+  - [x] ch06-03-hopt_nn.py - ch06-03-hopt_nn.ipynb
   - [x] ch06-04-filter.py - ch06-04-filter.ipynb
   - [x] ch06-05-embedded.py - ch06-05-embedded.ipynb
   - [x] ch06-06-wrapper.py - ch06-06-wrapper.ipynb
