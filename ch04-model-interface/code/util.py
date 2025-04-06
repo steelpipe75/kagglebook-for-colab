@@ -4,7 +4,8 @@ import os
 
 import numpy as np
 import pandas as pd
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 
 
 class Util:
@@ -25,8 +26,10 @@ class Logger:
         self.general_logger = logging.getLogger('general')
         self.result_logger = logging.getLogger('result')
         stream_handler = logging.StreamHandler()
-        file_general_handler = logging.FileHandler('../model/general.log')
-        file_result_handler = logging.FileHandler('../model/result.log')
+        # file_general_handler = logging.FileHandler('../model/general.log')
+        file_general_handler = logging.FileHandler('model/general.log')
+        # file_result_handler = logging.FileHandler('../model/result.log')
+        file_result_handler = logging.FileHandler('model/result.log')
         if len(self.general_logger.handlers) == 0:
             self.general_logger.addHandler(stream_handler)
             self.general_logger.addHandler(file_general_handler)

@@ -3,11 +3,15 @@ import os
 import numpy as np
 import pandas as pd
 from keras.callbacks import EarlyStopping
-from keras.layers.advanced_activations import PReLU
-from keras.layers.core import Activation, Dense, Dropout
-from keras.layers.normalization import BatchNormalization
+# from keras.layers.advanced_activations import PReLU
+from keras.layers import PReLU
+# from keras.layers.core import Activation, Dense, Dropout
+from keras.layers import Activation, Dense, Dropout
+# from keras.layers.normalization import BatchNormalization
+from keras.layers import BatchNormalization
 from keras.models import Sequential, load_model
-from keras.utils import np_utils
+# from keras.utils import np_utils
+from tensorflow.keras.utils import to_categorical
 from sklearn.preprocessing import StandardScaler
 
 from model import Model
@@ -33,7 +37,8 @@ class ModelNN(Model):
 
         if validation:
             va_x = scaler.transform(va_x)
-            va_y = np_utils.to_categorical(va_y, num_classes=9)
+            # va_y = np_utils.to_categorical(va_y, num_classes=9)
+            va_y = to_categorical(va_y, num_classes=9)
 
         # パラメータ
         nb_classes = 9
