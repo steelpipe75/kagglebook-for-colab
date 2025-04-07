@@ -52,7 +52,8 @@ class Runner:
 
             # バリデーションデータへの予測・評価を行う
             va_pred = model.predict(va_x)
-            score = log_loss(va_y, va_pred, eps=1e-15, normalize=True)
+            # score = log_loss(va_y, va_pred, eps=1e-15, normalize=True)
+            score = log_loss(va_y, va_pred, normalize=True)
 
             # モデル、インデックス、予測値、評価を返す
             return model, va_idx, va_pred, score
