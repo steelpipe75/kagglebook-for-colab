@@ -33,7 +33,8 @@ class ModelNN(Model):
         scaler = StandardScaler()
         scaler.fit(tr_x)
         tr_x = scaler.transform(tr_x)
-        tr_y = np_utils.to_categorical(tr_y, num_classes=9)
+        # tr_y = np_utils.to_categorical(tr_y, num_classes=9)
+        tr_y = to_categorical(tr_y, num_classes=9)
 
         if validation:
             va_x = scaler.transform(va_x)
@@ -79,7 +80,8 @@ class ModelNN(Model):
 
     def predict(self, te_x):
         te_x = self.scaler.transform(te_x)
-        pred = self.model.predict_proba(te_x)
+        # pred = self.model.predict_proba(te_x)
+        pred = self.model.predict(te_x)
         return pred
 
     def save_model(self):
