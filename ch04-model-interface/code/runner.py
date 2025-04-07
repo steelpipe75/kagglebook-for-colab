@@ -181,7 +181,8 @@ class Runner:
         # 学習データの読込を行う
         # 列名で抽出する以上のことを行う場合、このメソッドの修正が必要
         # 毎回train.csvを読み込むのは効率が悪いため、データに応じて適宜対応するのが望ましい（他メソッドも同様）
-        return pd.read_csv('../input/train.csv')[self.features]
+        # return pd.read_csv('../input/train.csv')[self.features]
+        return pd.read_csv('input/train.csv')[self.features]
 
     def load_y_train(self) -> pd.Series:
         """学習データの目的変数を読み込む
@@ -189,7 +190,8 @@ class Runner:
         :return: 学習データの目的変数
         """
         # 目的変数の読込を行う
-        train_y = pd.read_csv('../input/train.csv')['target']
+        # train_y = pd.read_csv('../input/train.csv')['target']
+        train_y = pd.read_csv('input/train.csv')['target']
         train_y = np.array([int(st[-1]) for st in train_y]) - 1
         train_y = pd.Series(train_y)
         return train_y
@@ -199,7 +201,8 @@ class Runner:
 
         :return: テストデータの特徴量
         """
-        return pd.read_csv('../input/test.csv')[self.features]
+        # return pd.read_csv('../input/test.csv')[self.features]
+        return pd.read_csv('input/test.csv')[self.features]
 
     def load_index_fold(self, i_fold: int) -> np.array:
         """クロスバリデーションでのfoldを指定して対応するレコードのインデックスを返す
