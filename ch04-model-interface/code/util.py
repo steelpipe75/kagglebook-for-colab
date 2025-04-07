@@ -73,4 +73,5 @@ class Submission:
         pred = Util.load(f'../model/pred/{run_name}-test.pkl')
         for i in range(pred.shape[1]):
             submission[f'Class_{i + 1}'] = pred[:, i]
-        submission.to_csv(f'../submission/{run_name}.csv', index=False)
+        # submission.to_csv(f'../submission/{run_name}.csv', index=False)
+        submission.to_csv(f'submission/{run_name}.csv', index=False)
