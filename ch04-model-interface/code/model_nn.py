@@ -85,14 +85,18 @@ class ModelNN(Model):
         return pred
 
     def save_model(self):
-        model_path = os.path.join('../model/model', f'{self.run_fold_name}.h5')
-        scaler_path = os.path.join('../model/model', f'{self.run_fold_name}-scaler.pkl')
+        # model_path = os.path.join('../model/model', f'{self.run_fold_name}.h5')
+        model_path = os.path.join('model/model', f'{self.run_fold_name}.h5')
+        # scaler_path = os.path.join('../model/model', f'{self.run_fold_name}-scaler.pkl')
+        scaler_path = os.path.join('model/model', f'{self.run_fold_name}-scaler.pkl')
         os.makedirs(os.path.dirname(model_path), exist_ok=True)
         self.model.save(model_path)
         Util.dump(self.scaler, scaler_path)
 
     def load_model(self):
-        model_path = os.path.join('../model/model', f'{self.run_fold_name}.h5')
-        scaler_path = os.path.join('../model/model', f'{self.run_fold_name}-scaler.pkl')
+        # model_path = os.path.join('../model/model', f'{self.run_fold_name}.h5')
+        model_path = os.path.join('model/model', f'{self.run_fold_name}.h5')
+        # scaler_path = os.path.join('../model/model', f'{self.run_fold_name}-scaler.pkl')
+        scaler_path = os.path.join('model/model', f'{self.run_fold_name}-scaler.pkl')
         self.model = load_model(model_path)
         self.scaler = Util.load(scaler_path)
