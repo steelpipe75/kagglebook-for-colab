@@ -37,8 +37,8 @@ pip install jupytext
   - [x] ch04-03-run_lgb.py - ch04-03-run_lgb.ipynb
   - [x] ch04-04-run_nn.py - ch04-04-run_nn.ipynb
   - [x] ch04-05-run_linear.py - ch04-05-run_linear.ipynb
-- [ ] ch04-model-interface
-  - [ ] code/run.py - code/run.ipynb
+- [x] ch04-model-interface
+  - [x] code/run.py - code/run.ipynb
 - [x] ch05
   - [x] ch05-01-validation.py - ch05-01-validation.ipynb
   - [x] ch05-02-timeseries.py - ch05-02-timeseries.ipynb
